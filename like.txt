@@ -1,0 +1,5 @@
+mysql>show tables like "exam_%";
+查询前缀为exam_打头的表名。
+
+mysql>delete from dazhao where userId like '201111%';
+删除dazhao表中所有以201111开头用户的信息。I

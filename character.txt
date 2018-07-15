@@ -1,0 +1,8 @@
+mysql>create table tbl_name(userId int(11),userName varchar(15))character set utf8
+创建表tbl_name,声明该字符集为utf8
+
+mysql>create table tbl_name(a varchar(65535))character set gbk
+创建表的时候，声明该表的字符集gbk
+
+mysql>set character_set_client=utf8
+自定义mysql客户端的字符集为utf8

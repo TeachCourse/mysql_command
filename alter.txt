@@ -1,0 +1,29 @@
+mysql>alter database test;
+修改数据库对应属性。
+
+mysql>alter database test default character set gbk;
+修改数据库test默认的字符编码为gbk。
+
+mysql>alter table dazhao add stuId int;
+添加一列，列名为stuId
+
+mysql>alter table dazhao change stuId stuName varchar(64);
+把stuId列名改为stuName，重命名列。
+
+mysql>alter table dazhao modify stuId varchar(20);
+将数据类型为int的stuId改为varchar类型。
+
+mysql>altet table dazhao DEFAULT character set utf8;
+修改表选项，将字符集改为utf8;
+
+mysql>alter table dazhao add stuId int;
+添加一列，列名为stuId
+
+mysql>alter table tbl_student add foreign key (class_id) references tbl_class (class_id) on delete cascade
+修改tbl_student的外键约束，主表执行删除操作时，从表也执行相应的操作。
+
+mysql>alter table tbl_student add foreign key (class_id) references tbl_class (class_id) on update cascade
+修改tbl_student的外键约束，主表执行更新操作时，从表也执行相应的操作。
+
+mysql>alter table tbl_student engine=InnoDB
+更改tbl_student表的存储引擎为InnoDB。

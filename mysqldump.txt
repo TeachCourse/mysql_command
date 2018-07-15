@@ -1,0 +1,21 @@
+>mysqldump
+启动mysqldump服务，该服务执行数据备份和还原。
+
+>mysqldump -uroot -pdazhao?012 dazhao > C:/AppServ/mysql/dazhao.sql
+将dazhao数据库里面的数据备份到指定的目录下,并制定备份的数据名称为dazhao。
+
+>mysqldump -uroot -pdazhao?012 dazhao tbl_name > C:/AppServ/mysql/dazhao_tbl_name.sql
+将dazhao数据库里面的tbl_name表备份到指定的目录下。
+
+>mysqldump -uroot -pdazhao?012 dazhao tbl_name1 , tbl_name2 , tbl_name3 > C:/AppServ/mysql/dazhao_tbl_names.sql
+将dazhao数据库里面的tbl_name1 , tbl_name2 , tbl_name3三张表备份到指定的目录下。
+
+>mysqldump -uroot -pdazhao?012 --databases test dazhao
+将test、dazhao数据库进行备份。
+
+>mysqldump 
+
+
+
+
+

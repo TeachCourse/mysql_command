@@ -1,0 +1,12 @@
+mysql>create table tbl_name( a varchar(65533) not null ) character set latin1
+允许有null就是65532，不允许有null就是65533。
+
+mysql>create table tbl_name( a varchar(65532) ) character set latin1
+允许有null就是65532，不允许有null就是65533。
+
+mysql>create table tbl_name( a varchar(65531) , b tinyint ) character set latin1
+长度超过255需要2个字节保存长度，一个字节保存null，还有一个字节保存当前记录中所有字段的null值。
+
+
+mysql>create table tbl_name( a varchar(65533) not null , b tinyint not null ) character set latin1
+当一条记录的所有字段都不为null，当前的一个字节可以省略。

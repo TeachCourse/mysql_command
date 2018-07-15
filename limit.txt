@@ -1,0 +1,2 @@
+mysql>select * from tbl_student order by stu_id limit 1
+排序后，查询出tbl_student表中的一条记录，limit限制查询的记录数。

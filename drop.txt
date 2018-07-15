@@ -1,0 +1,18 @@
+mysql>drop database test;
+删除对应的数据库
+注意：
+1、删除不可恢复，慎重使用
+
+mysql>drop table dazhao;
+删除指定的表。
+注意：
+1、首先判断表是否存在，表存在才可以删除。
+
+mysql>drop table if exists dazhao;
+如果存在dazhao表，则执行删除的操作。
+
+mysql>alter table dazhao drop stuId;
+删除指定表中的某个字段。
+
+mysql>drop table if exists tbl_student ;create table tbl_student (stu_id int not null stu_name varcahr(8) not null )
+首先判断是否存在tbl_student表，存在执行删除，然后再创建。

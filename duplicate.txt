@@ -1,0 +1,2 @@
+mysql>insert into tbl_name values (2011110924,"dazhao") on duplicate key update stu_name="dazhao"
+插入数据受主键约束，先判断插入是否成功，如果不成功，执行更新。注意：该更新不带set关键字。

@@ -1,0 +1,6 @@
+mysql>create table tbl_student (
+  stu_id int primary key auto_increment ,
+  stu_name varchar(10) not null , 
+  class_id int , 
+  foreign key(class_id ) references tbl_class (class_id) )character set utf8
+创建tbl_student表并指定其外键

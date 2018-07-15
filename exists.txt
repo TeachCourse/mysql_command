@@ -1,0 +1,6 @@
+mysql>select * from tbl_student where exists ( select * from tbl_class where tbl_student.class_id=tbl_class.class_id)
+exists子查询，查询出已分配班级的学生信息。
+相当于如下：
+mysql>select * from tbl_student where tbl_student.class_id in ( select class_id from tbl_class )
+两种子查询的方式，都可以达到同样的效果，根据需要进行选择。
+

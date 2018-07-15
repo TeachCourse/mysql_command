@@ -1,0 +1,7 @@
+1、Column length too big for column 'userId'( max = 21845 )
+为什么21845*3等于65535？
+
+2、create table tbl_student (stu_id int not null , stu_name varchar(8) not null )character set utf8。
+设置tbl_student表的字符集为utf8
+
+3、utf8字符集可以兼容所有的字符编码，建议使用该字符集进行编码。

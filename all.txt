@@ -1,0 +1,5 @@
+mysql>select userId , userName from dazhao_001 where userName =all(select userName from dazhao_001 where className='0228')
+遍历dazhao_001表，判断userName是否全部等于班级为0228对应的userName，查询出结果。
+
+mysql>select userId , userName from dazhao_001 where userName !=all (select userName from dazhao_001 where className='0228')
+使用!=all查询，返回dazhao_001中的userName不等于0228班级对应的userName的所有记录。

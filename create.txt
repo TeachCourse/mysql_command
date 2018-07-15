@@ -1,0 +1,11 @@
+mysql>CREATE DATABASE test;
+创建一个名称为test的数据库。
+
+mysql>CREATE TABLE IF NOT EXISTS test.dazhao();
+创建一个名称为dazhao的表，括号里面是表对应的字段名、属性。
+注意：最后一个字段后面不需添加冒号;创建的表必须指定对应的数据库。
+如何创建一个中文名称的数据库？
+
+mysql>create table if not exists dazhao (userId tinyint unsigned,userName varchar(20));
+创建无符号的userId字段，类型为tinyint，保存的大小为：0-255。
+

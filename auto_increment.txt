@@ -1,0 +1,12 @@
+mysql>create table tbl_001 ( stu_id int primary key auto_increment , stu_name varchar(15))
+设置stu_id为主键并自动增长，那么再插入数据的时候可以为null或不插入。
+
+mysql>insert into tbl_001 values(null,'dazhao');
+往tbl_001表里面添加一行值。
+
+mysql>insert into tbl_001 values(dazhao');
+往tbl_001表里面添加一行值。
+
+mysql>alter table stu_id auto_increment 10;
+设置自动增长的默认值为10。
+

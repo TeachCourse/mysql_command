@@ -1,0 +1,8 @@
+mysql>create table tbl_student (stu_id int primary key auto_increment , stu_name varchar(8) not null) engine myisam character set utf8
+创建一张tbl_student表，指定表的存储引擎是myisam和存储数据的字符编码uft8。
+
+mysql>create table tbl_student (stu_id int primary key auto_increment , stu_name varchar(8) not null) engine innodb character set gbk
+创建一张tbl_student表，指定表的存储引擎是myisam和存储数据的字符编码uft8。
+
+mysql>alter table tbl_student engine=InnoDB
+更改tbl_student表的存储引擎为InnoDB。

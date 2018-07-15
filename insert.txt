@@ -1,0 +1,21 @@
+mysql>insert into dazhao(userId ,userName) values("2011110924","大钊");
+往dazhao表里面插入数据
+
+mysql>insert into tbl_name(userId) values("dazhao")
+使用values关键字需要数据和字段数要对应，否则插入不成功。
+
+mysql>insert into tbl_name set userId="dazhao"
+使用set关键字执行数据插入。
+
+mysql>insert into tbl_name (userId,userName) values ("2011110924","dazhao") on duplicate key update userName="dazhao"
+指定字段索引插入数据，如果冲突，执行更新操作，使用update关键字，但没使用set关键字。
+
+mysql>insert into tbl_name (userId,userName) select stu_id,stu_name from tbl_student
+使用select语句查询出来的数据作为插入数据的数据源，注意，需要字段数一致。
+
+mysql>insert into tbl_name (userId,userName) select stu_id,stu_name from tbl_name
+如重复制，短时间内完成数据的快速增长。
+
+
+
+

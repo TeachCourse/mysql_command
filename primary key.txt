@@ -1,0 +1,12 @@
+mysql>create table tbl_001 (stu_id int primary key , stu_name varchar(15))
+指定stu_id为主键，主键不能为1，同时不能为null。
+
+mysql>insert into tbl_001(stu_id , stu_name ) values (1 , 'dazhao')
+主键再插入时不能为null。
+
+mysql>insert into tbl_001(stu_id , stu_name ) values (2 , 'dazhao')
+主键再插入时不能为重复值。
+
+mysql>create table tbl_001 ( stu_id int primary key auto_increment , stu_name varchar(15))
+设置stu_id为主键并自动增长，那么再插入数据的时候可以为null或不插入。
+

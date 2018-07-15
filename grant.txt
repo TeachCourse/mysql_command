@@ -1,0 +1,8 @@
+mysql>grant select,update,insert,delete on testdb.* to common_user @ '*';
+授予common_user用户查询、更新、插入、删除操作权限。
+
+mysql>grant create,alter,drop on testdb.* to developer @ '192.168.1.*';
+授予developer用户创建、修改、删除数据库操作权限。
+
+mysql>grant references on testdb.* to developer @ '192.168.0.*';
+授予developer用户操作数据库外键的权限。

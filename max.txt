@@ -1,0 +1,2 @@
+mysql>select max(userId) from tbl_student
+使用max关键字查询出userID最大的数。

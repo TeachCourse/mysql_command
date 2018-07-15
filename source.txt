@@ -1,0 +1,2 @@
+mysql>source C:/AppServ/mysql/dazhao.sql
+还原指定目录下的已经备份的数据。

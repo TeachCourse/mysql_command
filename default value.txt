@@ -1,0 +1,2 @@
+mysql> create table tbl_001(a int not null default 10 , b int not null)
+设置字段不为空，如果存在默认值，该字段选择默认值；否则提示字段插入失败。

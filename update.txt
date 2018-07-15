@@ -1,0 +1,5 @@
+mysql>update dazhao set tbl_id='2011110924',tbl_name='dazhao';
+更新dazhao表，将tbl_id、tbl_name字段分别更新为2011110924、dazhao。
+
+mysql>update dazhao set userName='dazhao',password='123456',email='123@qq.com',addresss='guiping' where userId=2011110924;
+更新dazhao表，根据userId进行更新

@@ -1,0 +1,10 @@
+mysql>select userId ,userName from dazhao;
+从表dazhao中查询userId、userName字段。
+
+mysql>select * from dazhao;
+从表dazhao中查询所有字段值。
+
+mysql>SELECT * FROM dazhao ORDER BY id LIMIT 5;
+对查询的数据以升序排列，并刷选前5条记录，默认升序排列ASC，降序使用DESC
+
+

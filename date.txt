@@ -1,0 +1,8 @@
+mysql>create table tbl_date (date_start date ,date_end date);
+创建tbl_date表，声明字段的时间类型为date。
+
+mysql>insert into tbl_date values('1970-1-1' , '2038-1-19');
+存储date时间类型的时间戳为：1970-1-1到2038-1-19
+
+
+

@@ -1,0 +1,1 @@
+mysql>select * from shjx_student left outer join shjx_class on shjx_student.class_id=shjx_class.class_id

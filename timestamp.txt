@@ -1,0 +1,13 @@
+mysql>create table tbl_timestamp (date_start timestamp ,date_end timestamp);
+创建tbl_date表，声明字段的时间类型为timestamp。
+
+mysql>insert into tbl_timestamp values('1970-1-1 00:00:00' , '2038-1-19 03:14:07');
+存储timestamp时间类型的时间戳为：1970-1-1到2038-1-19
+
+mysql>select date_time,date_end+0 from tbl_timestamp;
+检索的字段后+0，将检索出对应的时间戳。
+
+mysql>insert into tbl_timestamp values('1970101000000' , '2038119031407');
+timestamp类型可以添加任意格式的时间，可以使用任意分隔符。
+
+

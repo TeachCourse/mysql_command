@@ -1,0 +1,2 @@
+mysql>describe test.dazhao;
+用表格的形式打印出查询表的属性。

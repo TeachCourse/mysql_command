@@ -1,0 +1,2 @@
+mysql>delete from dazhao where userId=2011110924;
+删除学号为2011110924对应的信息

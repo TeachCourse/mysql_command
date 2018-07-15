@@ -1,0 +1,8 @@
+mysql>create table tbl_time(time_start time , time_end time);
+创建表tbl_time，声明time类型的两个字段。
+
+mysql>insert into tbl_time('-838-59-59','838-59-59');
+存储time类型的时间戳为：-838-59-59到838-59-59。
+
+mysql>insert into tbl_time(time_start_time) values ('231112');
+在表tbl_time的字段time_start_time插入23h11m12s的数据。

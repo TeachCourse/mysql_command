@@ -1,0 +1,13 @@
+mysql>create table tbl_student (
+  stu_id int primary key auto_increment ,
+  stu_name varchar(10) not null , 
+  class_id int , 
+  foreign key(class_id ) references tbl_class (class_id) 
+)character set utf8
+创建tbl_student表并指定其外键
+
+mysql>alter table tbl_student add foreign key (class_id) references tbl_class (class_id) on delete cascade
+修改tbl_student的外键约束，主表执行删除操作时，从表也执行相应的操作。
+
+mysql>alter table tbl_student add foreign key (class_id) references tbl_class (class_id) on update cascade
+修改tbl_student的外键约束，主表执行更新操作时，从表也执行相应的操作。

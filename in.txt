@@ -1,0 +1,3 @@
+mysql>select userId , userName from dazhao_001 where userName in (select userName from dazhao_001 where className='0228')
+
+mysql>select userId , userName from dazhao_001 where userName not in (select userName from dazhao_001 where className='0228')

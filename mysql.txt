@@ -1,0 +1,5 @@
+>mysql -hlocalhost -p3306 -uroot -pdazhao?012
+命令行窗口发送连接MySQL数据库命令，发送该命令必须在mysqli.exe服务端开启的情况下。
+
+>mysql -uroot -pdazhao?012
+命令行窗口发送连接MySQL数据库命令，发送该命令必须在mysqli.exe服务端开启的情况下。

@@ -1,0 +1,32 @@
+mysql>create table tbl_hobby (hobby set ('basketball','pingpang','football'))
+创建tbl_hobby表，声明hobby字段为set类型。
+
+mysql>insert into tbl_hobby values ('basketball,pingpang')
+往tbl_hobby表hobby字段里面插入basketball、pingpang。
+
+mysql>insert into tbl_hobby values ('football,pingpang')
+往tbl_hobby表hobby字段里面插入football、pingpang。
+
+mysql>set names gbk
+设置客户端、服务端的字符集编码：gbk。等同于，同时设置了set character_set_client=utf8,set charactter_set_connection=utf8,set character_set_result=utf8
+
+mysql>create table tbl_name(a varchar(65535))character set gbk
+创建一个表，指定该表的字符编码
+
+mysql>set character_set_client=utf8
+自定义mysql客户端的字符集为utf8
+
+mysql>SET character_set_server=utf8;
+自定义mysql服务端的字符集为utf8
+
+mysql>ALTER DATABASE testDB DEFAULT CHARACTER SET utf8;
+修改数据库testDB默认字符集编码：utf8
+
+mysql>ALTER TABLE tb_student DEFAULT CHARACTER SET utf8;
+修改表tb_student字符集编码：utf8
+
+
+
+
+
+

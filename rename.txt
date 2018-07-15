@@ -1,0 +1,11 @@
+mysql>rename table dazhao to dazhao_001;
+把名称为dazhao的表修改为dazhao_001。
+
+mysql>rename table dazhao to dazhao_001,dazhao to dazhao_002;
+把名称为dazhao的表修改为dazhao_001,同时支持修改多个表名称。
+
+mysql>rename table test.dazhao to use information_schema.dazhao;
+将test数据库下的dazhao表修改为information_schema数据库下的dazhao，该功能支持跨数据库重命名,实现把一个表从一个数据库移动到另一个数据库的功能。
+
+mysql>rename database;
+MySQL数据库命令里面不存在重命名数据库的命令。

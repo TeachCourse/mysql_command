@@ -1,0 +1,25 @@
+mysql>show databases;
+注意：
+1、database需要加s，表示不只一个数据库；
+2、mysql语句结束后要加分号；
+
+mysql>show tables;
+列出当前数据库底下下所有的表信息。
+
+mysql>show tables like "exam_%";
+查询前缀为exam_打头的表名。
+
+mysql>show create table test.dazhao;
+显示test数据库底下dazhao表对应的属性。
+
+mysql>show create table test.dazhao\G;
+显示test数据库底下dazhao表对应的属性。
+
+mysql>show create database dazhao;
+显示当前库的字符集，utf-8或gbk。
+
+mysql>show variables like '%char%'
+查看当前所有的编码
+
+mysql>show variables like 'collation%'
+查看字段编码

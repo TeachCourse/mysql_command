@@ -1,0 +1,3 @@
+mysql>(select * from shjx_student left join shjx_class )union (select * from shjx_student right join shjx_class)
+使用关键字union把外部链接和右外部链接构成全链接。
+

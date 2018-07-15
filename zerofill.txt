@@ -1,0 +1,6 @@
+mysql>alter table dazhao add stuId tinyint(2) zerofill;
+在dazhao数据库里添加一列stuId，设置该字段的显示宽度为2，不够就用0填充。
+
+mysql>alter table num_001 add c decimal(15,2) zerofill;
+在num_001表中添加一列，声明该列的类型为decimal，总位数为15，小数位数为2，位数不够前导0。
+

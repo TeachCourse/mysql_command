@@ -1,0 +1,20 @@
+mysql>create table dazhao (userId tinyint unsigned,userName varchar(20));
+创建无符号的userId字段，类型为tinyint，保存的大小为：0-255。
+
+mysql>create table num_001(a float,b double);
+创建一张num_001表，该表声明两个字段，分别为a、b
+
+mysql>insert into num_001(a,b) values(1234567890.0987654321,1234567890.0987654321);
+存储两个很长精度的数字，查看数据库里面对应单精度、双精度默认的存储位数。
+
+mysql>create table num_002(a float(5,2),b double(8,3));
+创建一张num_002表，该表声明字段a、b的精度位数和小数位数。
+
+mysql>insert into num_002(a,b) values(353.45,23456.887);
+成功存储指定精度位数和小数位数的浮点数。
+
+mysql>insert into num_002(a,b) values(23453.45,234560.8888);
+成功存储指定精度位数和小数位数的浮点数。
+
+mysql>insert into num_002(a,b) values(0.35345E3,0.23456887E5);
+浮点数支持科学计数法，能够成功存储不超出长度的数。

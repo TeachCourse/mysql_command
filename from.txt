@@ -1,0 +1,9 @@
+mysql>select * from tbl_student
+
+mysql>select * from ( select stu_name , stu_class from tbl_student where stu_id>10 )
+as temp 
+表子查询用于from子句内，要求使用一个表，而不是一个结果集，应该给这个结果集起别名，使用as关键字
+
+mysql>select name,class from ( select stu_name as name, stu_class as class from tbl_student where stu_id>10 )
+as temp 
+外部查询所使用的列名，是由子查询指定的。

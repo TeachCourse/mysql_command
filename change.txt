@@ -1,0 +1,2 @@
+mysql>alter table dazhao change stuId stuName int;
+把stuId列名改为stuName，重命名列。

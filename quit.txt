@@ -1,0 +1,2 @@
+mysql>quit
+退出MySQL客户端连接

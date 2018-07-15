@@ -1,0 +1,2 @@
+mysql>alter table dazhao modify stuId varchar(20);
+将数据类型为int的stuId改为varchar类型。

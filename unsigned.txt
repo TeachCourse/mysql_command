@@ -1,0 +1,2 @@
+mysql>create table dazhao (userId tinyint unsigned,userName varchar(20));
+创建无符号的userId字段，类型为tinyint，保存的大小为：0-255。

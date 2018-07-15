@@ -1,0 +1,5 @@
+mysql>alter table tbl_student add foreign key (class_id) references tbl_class (class_id) on delete cascade
+修改tbl_student的外键约束，主表执行删除操作时，从表也执行相应的操作。
+
+mysql>alter table tbl_student add foreign key (class_id) references tbl_class (class_id) on update cascade
+修改tbl_student的外键约束，主表执行更新操作时，从表也执行相应的操作。

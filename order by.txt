@@ -1,0 +1,1 @@
+1. mysql>select id,image,state,content from tb_linkItem where state=? order by _id desc

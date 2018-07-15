@@ -1,0 +1,12 @@
+mysql>create table tbl_001(tbl_id int primary key,tbl_name char(20) default '未填写');
+创建一个tbl_001表，把tbl_id声明为主键
+
+mysql>create table tbl_001(tbl_id int ,tbl_name char(20) ,primary key(tbl_id));
+创建一个tbl_001表，把tbl_id声明为主键
+
+
+
+
+
+
+

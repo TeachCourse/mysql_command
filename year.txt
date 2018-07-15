@@ -1,0 +1,5 @@
+mysql>create table tbl_year (year_start year , year_end year);
+创建表tbl_year，声明两字段类型为year。
+
+mysql>insert into tbl_year(year_start , year_end) values('1901','2155');
+往表tbl_year插入year类型的时间戳，时间戳为：1901到2155。

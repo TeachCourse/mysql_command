@@ -1,0 +1,9 @@
+mysql>create table tbl_gender (gender enum('female','male'))
+创建tbl_gender表，声明gender字段类型为enum。
+
+mysql>insert into tbl_gender values ('female')
+枚举类型的字段值只能是声明的值中之一。
+
+mysql>insert into tbl_gender values (1)
+枚举类型插入的值可以是整型数据，取值是65535以内。
+

@@ -1,0 +1,8 @@
+mysql>create table tbl_datetime (date_start datetime ,date_end datetime);
+创建tbl_datetime表，声明字段的时间类型为datetime。
+
+mysql>insert into tbl_datetime values('1000-1-1 00:00:00' , '9999-12-31 12:59:59');
+存储timestamp时间类型的时间戳为：1000-1-1到9999-12-31
+
+
+
